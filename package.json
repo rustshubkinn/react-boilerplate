@@ -15,13 +15,32 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "eslint:check": "eslint src --ext .jsx --ext .js",
+    "eslint:fix": "eslint src --ext .jsx --ext .js --fix",
+    "prettier:check": "prettier --check \"src/**/*.{js,jsx}\"",
+    "prettier:fix": "prettier --write \"src/**/*.{js,jsx}\"",
+    "stylelint:check": "stylelint \"src/**/*.scss\"",
+    "stylelint:fix": "stylelint \"src/**/*.scss\" --fix",
+    "prepare": "husky install"
   },
   "eslintConfig": {
+    "plugins": [
+      "import",
+      "jsx-a11y",
+      "react",
+      "react-hooks"
+    ],
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "eslint:recommended",
+      "airbnb",
+      "prettier"
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": 0
+    }
   },
   "browserslist": {
     "production": [
@@ -34,5 +53,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^6.0.0",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0"
   }
 }
