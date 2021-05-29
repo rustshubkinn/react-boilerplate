@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "node-sass": "^5.0.0",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -18,8 +20,8 @@
     "eject": "react-scripts eject",
     "eslint:check": "eslint src --ext .jsx --ext .js",
     "eslint:fix": "eslint src --ext .jsx --ext .js --fix",
-    "prettier:check": "prettier --check \"src/**/*.{js,jsx}\"",
-    "prettier:fix": "prettier --write \"src/**/*.{js,jsx}\"",
+    "prettier:check": "prettier --check \"src/**/*.{js,jsx,scss}\"",
+    "prettier:fix": "prettier --write \"src/**/*.{js,jsx,scss}\"",
     "stylelint:check": "stylelint \"src/**/*.scss\"",
     "stylelint:fix": "stylelint \"src/**/*.scss\" --fix",
     "prepare": "husky install"
@@ -65,6 +67,9 @@
     "husky": "^6.0.0",
     "prettier": "^2.2.1",
     "stylelint": "^13.13.1",
-    "stylelint-config-sass-guidelines": "^8.0.0"
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-order": "^4.1.0"
   }
 }
