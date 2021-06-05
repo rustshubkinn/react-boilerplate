@@ -2,17 +2,6 @@
   "name": "react-boilerplate",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^12.8.3",
-    "node-sass": "^5.0.0",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -26,35 +15,16 @@
     "stylelint:fix": "stylelint \"src/**/*.scss\" --fix",
     "prepare": "husky install"
   },
-  "eslintConfig": {
-    "plugins": [
-      "import",
-      "jsx-a11y",
-      "react",
-      "react-hooks"
-    ],
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "eslint:recommended",
-      "airbnb",
-      "prettier"
-    ],
-    "rules": {
-      "react/react-in-jsx-scope": 0
-    }
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "node-sass": "^5.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
   },
   "devDependencies": {
     "eslint": "^7.26.0",
@@ -71,5 +41,76 @@
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-sass-guidelines": "^8.0.0",
     "stylelint-order": "^4.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "plugins": [
+      "import",
+      "jsx-a11y",
+      "react",
+      "react-hooks"
+    ],
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "eslint:recommended",
+      "airbnb",
+      "prettier"
+    ],
+    "rules": {
+      "arrow-parens": 2,
+      "brace-style": [
+        2,
+        "1tbs"
+      ],
+      "curly": [
+        2,
+        "all"
+      ],
+      "dot-location": [
+        2,
+        "property"
+      ],
+      "eol-last": 2,
+      "jsx-quotes": [
+        2,
+        "prefer-double"
+      ],
+      "keyword-spacing": [
+        2,
+        {
+          "after": true,
+          "before": true
+        }
+      ],
+      "max-len": 2,
+      "space-before-blocks": 2,
+      "no-lonely-if": 2,
+      "no-trailing-spaces": 2,
+      "no-multi-spaces": 2,
+      "no-multiple-empty-lines": [
+        2,
+        {
+          "max": 1
+        }
+      ],
+      "indent": [
+        2,
+        2
+      ],
+      "semi": 2,
+      "react/react-in-jsx-scope": 0
+    }
   }
 }
