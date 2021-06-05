@@ -111,6 +111,15 @@
       ],
       "semi": 2,
       "react/react-in-jsx-scope": 0
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": [
+            "src"
+          ]
+        }
+      }
     }
   }
 }
