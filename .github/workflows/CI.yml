@@ -8,8 +8,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: make install
-      - run: make editorconfig
       - run: make eslint:check
       - run: make prettier:check
       - run: make stylelint:check
