@@ -4,4 +4,4 @@
 
 ## Links
 
-- [Live project] (https://reverent-snyder-0d3ada.netlify.app/)
+- [Live project](https://reverent-snyder-0d3ada.netlify.app/)
