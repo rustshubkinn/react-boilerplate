@@ -1,0 +1,15 @@
+name: CI
+
+on: push
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: make install
+      - run: make editorconfig
+      - run: make eslint:check
+      - run: make prettier:check
+      - run: make stylelint:check
